@@ -1,0 +1,1685 @@
+{
+ "graph_schema": "cwi.graph/1.0",
+ "generated": "2026-09-15",
+ "maintainer": "Cumulative Web Inc (CWI_Data)",
+ "source_of_truth_note": "Machine-readable mirror of ai-learning-kit/kit.md. Every node carries evidence; status is verified | owner_confirmed | claimed_unverified | promised_unverified.",
+ "counts": {
+  "organization": 1,
+  "artist": 1,
+  "movement": 1,
+  "person": 4,
+  "studio": 1,
+  "place": 2,
+  "track": 24,
+  "release": 4,
+  "playlist": 5,
+  "evidence": 5,
+  "media_asset": 2,
+  "edges": 96
+ },
+ "nodes": [
+  {
+   "id": "org:cwi",
+   "type": "organization",
+   "name": "Cumulative Web Inc",
+   "status": "verified",
+   "attrs": {
+    "contact_business_sync": "hp@cumulativeweb.com",
+    "manager": "Henry Pitts (aka Black Lansky)"
+   },
+   "evidence": [
+    {
+     "claim": "CWI is the label/management entity",
+     "source": "MEMORY.md / kit.md",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "artist:tbhh",
+   "type": "artist",
+   "name": "That Boy Hi Hat",
+   "status": "verified",
+   "attrs": {
+    "genre": [
+     "alternative rap",
+     "Post-Trap Futurism"
+    ],
+    "based_in": "place:frederick-md",
+    "spotify_artist_id": "2f9j460EwjfvjYp3trBcb7",
+    "spotify_artist_url": "https://open.spotify.com/artist/2f9j460EwjfvjYp3trBcb7",
+    "monthly_listeners": 171,
+    "monthly_listeners_observed": "2026-09-14",
+    "last_verified": "2026-09-15",
+    "spotify_releases_count": 21,
+    "releases_audit_date": "2026-09-15"
+   },
+   "evidence": [
+    {
+     "claim": "Based in Frederick, Maryland",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    },
+    {
+     "claim": "171 monthly listeners",
+     "source": "Spotify artist page",
+     "observed": "2026-09-14",
+     "status": "verified"
+    },
+    {
+     "claim": "21 releases on Spotify",
+     "source": "catalog audit",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "movement:ptf",
+   "type": "movement",
+   "name": "Post-Trap Futurism",
+   "status": "verified",
+   "attrs": {
+    "description": "That Boy Hi Hat's self-described lane: alternative rap built for speakers and screens alike \u2014 cinematic, dark, underground-authentic.",
+    "ontology": {
+     "concept": "A movement node: the artist's stated genre-lane. Exemplar tracks below are the canonical illustrations.",
+     "sonic_markers": [
+      {
+       "marker": "cinematic",
+       "source": "kit.md \u00a72 (artist's stated lane)"
+      },
+      {
+       "marker": "dark",
+       "source": "kit.md \u00a72 (artist's stated lane)"
+      },
+      {
+       "marker": "underground-authentic",
+       "source": "kit.md \u00a72 (artist's stated lane)"
+      },
+      {
+       "marker": "built for speakers and screens alike",
+       "source": "kit.md \u00a72 (artist's stated lane)"
+      }
+     ],
+     "influences": {
+      "status": "pending",
+      "note": "No verified influence data on record. Not asserted \u2014 do not invent."
+     },
+     "related_concepts": [
+      "alternative rap",
+      "post-trap"
+     ]
+    },
+    "editorial": "24hip-hop.com: 'That Boy Hi Hat Rewrites Rap's DNA with The Alternative Theory: Inside the Birth of Post-Trap Futurism.'",
+    "last_verified": "2026-09-15"
+   },
+   "evidence": [
+    {
+     "claim": "Artist's stated lane",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    },
+    {
+     "claim": "24hip-hop.com editorial headline",
+     "source": "24hip-hop.com (independent editorial)",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "person:black-lansky",
+   "type": "person",
+   "name": "Henry Pitts (aka Black Lansky)",
+   "status": "verified",
+   "attrs": {
+    "roles": [
+     "manager",
+     "producer",
+     "label owner"
+    ],
+    "organization": "org:cwi"
+   },
+   "evidence": [
+    {
+     "claim": "Runs Cumulative Web Inc; manages That Boy Hi Hat",
+     "source": "MEMORY.md",
+     "observed": "2026-09-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "person:hybrid",
+   "type": "person",
+   "name": "Hybrid",
+   "status": "verified",
+   "attrs": {
+    "roles": [
+     "producer"
+    ]
+   },
+   "evidence": [
+    {
+     "claim": "Producer of Diabolique, co-produced with Black",
+     "source": "CWI records via kit.md \u00a73",
+     "observed": "2026-09-15",
+     "status": "verified"
+    },
+    {
+     "claim": "Mixed & mastered Zooted Zone; NOT a co-production credit",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "person:jeck-da-general",
+   "type": "person",
+   "name": "Jeck Da General",
+   "status": "verified",
+   "attrs": {
+    "roles": [
+     "producer"
+    ]
+   },
+   "evidence": [
+    {
+     "claim": "Producer of 'Flamerz'",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "person:kokurcho",
+   "type": "person",
+   "name": "Kokurcho",
+   "status": "owner_confirmed",
+   "attrs": {
+    "accolades": [
+     "BET Awards-nominated",
+     "RIAA Gold certified",
+     "RIAA multi-platinum certified"
+    ]
+   },
+   "evidence": [
+    {
+     "claim": "BET-nominated; RIAA Gold and multi-platinum certified",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "studio:cue-recording",
+   "type": "studio",
+   "name": "Cue Recording Studio",
+   "status": "verified",
+   "attrs": {
+    "location": "Arlington, Virginia"
+   },
+   "evidence": [
+    {
+     "claim": "Diabolique recorded here \u2014 official position",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "place:frederick-md",
+   "type": "place",
+   "name": "Frederick, Maryland",
+   "status": "verified",
+   "attrs": {},
+   "evidence": [
+    {
+     "claim": "That Boy Hi Hat is based in Frederick, MD",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "place:arlington-va",
+   "type": "place",
+   "name": "Arlington, Virginia",
+   "status": "verified",
+   "attrs": {},
+   "evidence": [
+    {
+     "claim": "Location of Cue Recording Studio",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:0emH8ktA8x4DkOFLsG5xkW",
+   "type": "track",
+   "name": "Zooted Zone",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/0emH8ktA8x4DkOFLsG5xkW",
+    "spotify_id": "0emH8ktA8x4DkOFLsG5xkW",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 1,
+    "notes": "Flagship. Breakout record (owner-confirmed). 307,439 lifetime Spotify plays observed 2026-09-14. Mixed & mastered with Hybrid (NOT a co-production). #30 New Rap Hits (verified 2026-09-15)."
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 1; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:3pQEzg7xFqGIk0CK1Za1Kw",
+   "type": "track",
+   "name": "Shaka Zulu",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/3pQEzg7xFqGIk0CK1Za1Kw",
+    "spotify_id": "3pQEzg7xFqGIk0CK1Za1Kw",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 2,
+    "notes": "Flagship. #21 New Rap Hits (verified 2026-09-15)."
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 2; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:4NAyd7rvnuG3DrPFqXo4eQ",
+   "type": "track",
+   "name": "Doves & Diamonds",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/4NAyd7rvnuG3DrPFqXo4eQ",
+    "spotify_id": "4NAyd7rvnuG3DrPFqXo4eQ",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 3,
+    "notes": "Flagship. #31 New Rap Hits (verified 2026-09-15)."
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 3; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "type": "track",
+   "name": "Diabolique",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj",
+    "spotify_id": "2eSyWmIdPzEMyWejLb2LBj",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 4,
+    "notes": "Single released 2026-07-03. Producer: Hybrid, co-produced with Black (per CWI records). Recorded at Cue Recording Studio, Arlington VA (official position). Also on Apple Music, Amazon Music, YouTube Music, Pandora, Deezer (links in kit.json)."
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 4; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:2MDHAUo4zJTHGXGQHUhNw0",
+   "type": "track",
+   "name": "Flamerz",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/2MDHAUo4zJTHGXGQHUhNw0",
+    "spotify_id": "2MDHAUo4zJTHGXGQHUhNw0",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 5,
+    "notes": "Producer: Jeck Da General (owner-confirmed)."
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 5; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:4XP56LZjeS0TJUd30kpGSK",
+   "type": "track",
+   "name": "Neon Nights Pt. 777",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/4XP56LZjeS0TJUd30kpGSK",
+    "spotify_id": "4XP56LZjeS0TJUd30kpGSK",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 6,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 6; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:2daugr3ni3r6jHH6UI57EK",
+   "type": "track",
+   "name": "Ultimate",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/2daugr3ni3r6jHH6UI57EK",
+    "spotify_id": "2daugr3ni3r6jHH6UI57EK",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 7,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 7; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:6nhzq7P7x09aUbPts4ywFl",
+   "type": "track",
+   "name": "Painted Lady",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/6nhzq7P7x09aUbPts4ywFl",
+    "spotify_id": "6nhzq7P7x09aUbPts4ywFl",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 8,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 8; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:3w4RKguHAT2xd9K0w5CklC",
+   "type": "track",
+   "name": "Warped and Wicked",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/3w4RKguHAT2xd9K0w5CklC",
+    "spotify_id": "3w4RKguHAT2xd9K0w5CklC",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 9,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 9; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:4RFWRhPn8NX0DTQPpl1swe",
+   "type": "track",
+   "name": "Golden Diamond",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/4RFWRhPn8NX0DTQPpl1swe",
+    "spotify_id": "4RFWRhPn8NX0DTQPpl1swe",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 10,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 10; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:2tEdW6WKfcs2NGI6OIvAm6",
+   "type": "track",
+   "name": "Spirits n Shadows",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/2tEdW6WKfcs2NGI6OIvAm6",
+    "spotify_id": "2tEdW6WKfcs2NGI6OIvAm6",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 11,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 11; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:7FQvcCS2CdTVsd6hb9jvHx",
+   "type": "track",
+   "name": "Flex My Flame",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/7FQvcCS2CdTVsd6hb9jvHx",
+    "spotify_id": "7FQvcCS2CdTVsd6hb9jvHx",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 12,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 12; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:2ZUYjQGsRLHRcsfgyeAWpo",
+   "type": "track",
+   "name": "Rainbows And Roses",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/2ZUYjQGsRLHRcsfgyeAWpo",
+    "spotify_id": "2ZUYjQGsRLHRcsfgyeAWpo",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 13,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 13; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:6NfxhZ4NebIduGEKZeD2Lk",
+   "type": "track",
+   "name": "Tears and Scars",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/6NfxhZ4NebIduGEKZeD2Lk",
+    "spotify_id": "6NfxhZ4NebIduGEKZeD2Lk",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 14,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 14; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:2aTbpxiF2jNiB3PGi81oqa",
+   "type": "track",
+   "name": "Toxic Elements",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/2aTbpxiF2jNiB3PGi81oqa",
+    "spotify_id": "2aTbpxiF2jNiB3PGi81oqa",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 15,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 15; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:2dvfN5rFyQO69qmb5oYlRG",
+   "type": "track",
+   "name": "7th Angel",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/2dvfN5rFyQO69qmb5oYlRG",
+    "spotify_id": "2dvfN5rFyQO69qmb5oYlRG",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 16,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 16; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:6YQq5GsaUmanh0XyHQIGoR",
+   "type": "track",
+   "name": "Scorpions & Sapphires",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/6YQq5GsaUmanh0XyHQIGoR",
+    "spotify_id": "6YQq5GsaUmanh0XyHQIGoR",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 17,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 17; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:3KX10tZBft6gp2Nea9HZOB",
+   "type": "track",
+   "name": "Place I Go to Dream",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/3KX10tZBft6gp2Nea9HZOB",
+    "spotify_id": "3KX10tZBft6gp2Nea9HZOB",
+    "explicit_per_spotify_metadata": false,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 18,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 18; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:31MTBSMfWy4jGEYAilkaH8",
+   "type": "track",
+   "name": "Place I Go to Dream - Remastered",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/31MTBSMfWy4jGEYAilkaH8",
+    "spotify_id": "31MTBSMfWy4jGEYAilkaH8",
+    "explicit_per_spotify_metadata": false,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 19,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 19; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:3tKoMnnlkcRr7wE3PUQ9bp",
+   "type": "track",
+   "name": "Place I Go to Dream - Instrumental",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/3tKoMnnlkcRr7wE3PUQ9bp",
+    "spotify_id": "3tKoMnnlkcRr7wE3PUQ9bp",
+    "explicit_per_spotify_metadata": false,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 20,
+    "notes": "Title is metadata only; NOT an asserted licensable instrumental."
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 20; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:6jJpR9IhQ9PmRPJpxLlOmK",
+   "type": "track",
+   "name": "Smokin' Pain",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/6jJpR9IhQ9PmRPJpxLlOmK",
+    "spotify_id": "6jJpR9IhQ9PmRPJpxLlOmK",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 21,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 21; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:7xbS3rY8ZzCXNEPLPykf95",
+   "type": "track",
+   "name": "Phantasm",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/7xbS3rY8ZzCXNEPLPykf95",
+    "spotify_id": "7xbS3rY8ZzCXNEPLPykf95",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 22,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 22; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:4Z5UCQLqWzpPeihPTZ9Gqg",
+   "type": "track",
+   "name": "Misfits and Hooligans",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/4Z5UCQLqWzpPeihPTZ9Gqg",
+    "spotify_id": "4Z5UCQLqWzpPeihPTZ9Gqg",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 23,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 23; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "track:3r86CjoxCNvvCz98h2btm1",
+   "type": "track",
+   "name": "Roses over Monaco",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/track/3r86CjoxCNvvCz98h2btm1",
+    "spotify_id": "3r86CjoxCNvvCz98h2btm1",
+    "explicit_per_spotify_metadata": true,
+    "performed_by": "That Boy Hi Hat",
+    "ai_learning_set_position": 24,
+    "notes": ""
+   },
+   "evidence": [
+    {
+     "claim": "Track identity and link",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15 \u00a73 row 24; Spotify oEmbed verification, 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "release:diabolique-single",
+   "type": "release",
+   "name": "Diabolique (single)",
+   "status": "verified",
+   "attrs": {
+    "release_date": "2026-07-03"
+   },
+   "evidence": [
+    {
+     "claim": "Release date 2026-07-03",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "release:alternative-theory",
+   "type": "release",
+   "name": "The Alternative Theory",
+   "status": "owner_confirmed",
+   "attrs": {
+    "release_date": "2025-11-20"
+   },
+   "evidence": [
+    {
+     "claim": "Dated 2025-11-20",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "release:gta-vi-ep",
+   "type": "release",
+   "name": "GTA VI EP",
+   "status": "owner_confirmed",
+   "attrs": {
+    "note": "Separate release from NO SKIPS (owner-confirmed); artwork on file"
+   },
+   "evidence": [
+    {
+     "claim": "NO SKIPS and GTA VI EP are separate releases, not a rename",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "release:no-skips",
+   "type": "release",
+   "name": "NO SKIPS",
+   "status": "owner_confirmed",
+   "attrs": {
+    "note": "Separate release from GTA VI EP (owner-confirmed)"
+   },
+   "evidence": [
+    {
+     "claim": "NO SKIPS and GTA VI EP are separate releases, not a rename",
+     "source": "owner-confirmed by Black (Henry Pitts), 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "playlist:new-rap-hits",
+   "type": "playlist",
+   "name": "New Rap Hits",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/playlist/5zhnSpZqKRRaOvRMWuT0bL",
+    "followers_at_acceptance": 673,
+    "curator_channel": "Audiartist",
+    "verification_status": "verified",
+    "positions_last_verified": "2026-09-15"
+   },
+   "evidence": [
+    {
+     "claim": "Full 105-track scan 2026-09-15: #21 Shaka Zulu, #30 Zooted Zone, #31 Doves & Diamonds",
+     "source": "playlist scan",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "playlist:ai-learning-set",
+   "type": "playlist",
+   "name": "That Boy Hi Hat \u2013 Alternative Rap Complete Catalog (AI Learning Set)",
+   "status": "verified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/playlist/45RaLEzD4KO8YHpp3oayq8",
+    "spotify_id": "spotify:playlist:45RaLEzD4KO8YHpp3oayq8",
+    "track_count": 24,
+    "purpose": "Complete catalog set published for LLMs and agents to learn the artist's sound",
+    "verification_status": "verified"
+   },
+   "evidence": [
+    {
+     "claim": "Playlist created 2026-09-14; 24 unique tracks, recount 2026-09-15",
+     "source": "ai-learning-kit/kit.md, audited 2026-09-15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "playlist:no-label-needed",
+   "type": "playlist",
+   "name": "No Label Needed - Hip Hop & R&B | The Next Wave",
+   "status": "claimed_unverified",
+   "attrs": {
+    "spotify_url": "https://open.spotify.com/playlist/79Qj8SYOl5zW4m4dMprrX9",
+    "verification_status": "claimed_unverified"
+   },
+   "evidence": [
+    {
+     "claim": "Curator (Flow) claimed Zooted Zone added 2026-09-14; two full scans found 20 tracks, none by That Boy Hi Hat",
+     "source": "playlist scans 2026-09-14/15",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "playlist:its-goin",
+   "type": "playlist",
+   "name": "It's Goin",
+   "status": "claimed_unverified",
+   "attrs": {
+    "verification_status": "claimed_unverified",
+    "note": "Curator's site advertises paid adds \u2014 flagged payola-adjacent; no payment made"
+   },
+   "evidence": [
+    {
+     "claim": "Curator (Shan/DJ 6Rings) claimed a That Boy Hi Hat track added 2026-09-14; playlist not locatable via Spotify search",
+     "source": "search + scan attempt",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "playlist:watch-tha-gap-5",
+   "type": "playlist",
+   "name": "WATCH THA GAP VOL.5",
+   "status": "promised_unverified",
+   "attrs": {
+    "verification_status": "promised_unverified"
+   },
+   "evidence": [
+    {
+     "claim": "Curator promised to add 'Ultimate' 2026-09-14; playlist not located \u2014 promise only",
+     "source": "curator message",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "evidence:placements-2026-09-15",
+   "type": "evidence",
+   "name": "New Rap Hits placement verification",
+   "status": "verified",
+   "attrs": {
+    "verified_playlist_count": 1,
+    "playlist": "playlist:new-rap-hits",
+    "positions": {
+     "Shaka Zulu": 21,
+     "Zooted Zone": 30,
+     "Doves & Diamonds": 31
+    },
+    "scan_scope": "full playlist, all 105 tracks",
+    "last_verified": "2026-09-15",
+    "accepted": "2026-09-14 via Audiartist",
+    "submission_ids": {
+     "Zooted Zone": "#25818",
+     "Doves & Diamonds": "#25820",
+     "Shaka Zulu": "#25821"
+    }
+   },
+   "evidence": [
+    {
+     "claim": "Scan result",
+     "source": "full playlist scan",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "evidence:zooted-307k",
+   "type": "evidence",
+   "name": "Zooted Zone lifetime plays",
+   "status": "verified",
+   "attrs": {
+    "metric": "lifetime_spotify_plays",
+    "value": 307439,
+    "track": "track:0emH8ktA8x4DkOFLsG5xkW",
+    "note": "Lifetime plays far exceed 171 monthly listeners \u2014 converted at playlist scale before",
+    "last_verified": "2026-09-15"
+   },
+   "evidence": [
+    {
+     "claim": "307,439 lifetime plays",
+     "source": "Spotify",
+     "observed": "2026-09-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "evidence:claim-no-label-needed",
+   "type": "evidence",
+   "name": "No Label Needed claim (unverified)",
+   "status": "verified",
+   "attrs": {
+    "status": "claimed_unverified",
+    "claim": "Curator (Flow) said Zooted Zone was added, 2026-09-14",
+    "counter_evidence": "Two full scans (2026-09-14, 2026-09-15) found 20 tracks, none by That Boy Hi Hat"
+   },
+   "evidence": [
+    {
+     "claim": "Claim vs scan",
+     "source": "Messenger + playlist scans",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "evidence:claim-its-goin",
+   "type": "evidence",
+   "name": "It's Goin claim (unverified, payola-adjacent curator)",
+   "status": "verified",
+   "attrs": {
+    "status": "claimed_unverified",
+    "claim": "Curator (Shan/DJ 6Rings) said a That Boy Hi Hat track was added, 2026-09-14",
+    "counter_evidence": "Playlist not locatable via Spotify search; curator site sells $25 adds \u2014 flagged, no payment made"
+   },
+   "evidence": [
+    {
+     "claim": "Claim vs search",
+     "source": "Messenger + Spotify search",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "evidence:claim-watch-tha-gap",
+   "type": "evidence",
+   "name": "WATCH THA GAP VOL.5 promise (unverified)",
+   "status": "verified",
+   "attrs": {
+    "status": "promised_unverified",
+    "claim": "Curator promised to add 'Ultimate' 2026-09-14",
+    "counter_evidence": "Playlist not located; promise only"
+   },
+   "evidence": [
+    {
+     "claim": "Promise only",
+     "source": "curator message",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "media:gtavi-artwork",
+   "type": "media_asset",
+   "name": "GTA VI EP artwork",
+   "status": "verified",
+   "attrs": {
+    "file": "studio/catalog-art/gtavi.jpg",
+    "usage": "Used in 2026-09-15 Instagram reel 'Which game needs this soundtrack?'"
+   },
+   "evidence": [
+    {
+     "claim": "Artwork file on record; reel published 2026-09-15 via Instagram publishing API",
+     "source": "workspace file + publish confirmation",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "id": "media:ig-reel-2026-09-15",
+   "type": "media_asset",
+   "name": "Instagram reel: 'Which game needs this soundtrack?'",
+   "status": "verified",
+   "attrs": {
+    "platform": "instagram",
+    "account": "@lanskyblack",
+    "published": "2026-09-15",
+    "caption": "Which game needs this soundtrack? Best answer gets pinned. #ThatBoyHiHat #SyncLicensing #GameMusic #PostTrapFuturism #AltRap #IndieGame #CumulativeWebInc",
+    "audio": "Doves & Diamonds master excerpt 1:00\u20131:35"
+   },
+   "evidence": [
+    {
+     "claim": "Published via Instagram connector",
+     "source": "publish confirmation",
+     "observed": "2026-09-15",
+     "status": "verified"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "artist:tbhh",
+   "to": "org:cwi",
+   "rel": "managed_by",
+   "note": "kit.md \u00a71"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "movement:ptf",
+   "rel": "defines",
+   "note": "artist self-description"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "person:kokurcho",
+   "rel": "associated",
+   "note": "CWI people index lists Kokurcho in artist's orbit"
+  },
+  {
+   "from": "studio:cue-recording",
+   "to": "place:arlington-va",
+   "rel": "located_in",
+   "note": "owner-confirmed"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "place:frederick-md",
+   "rel": "based_in",
+   "note": "owner-confirmed"
+  },
+  {
+   "from": "track:0emH8ktA8x4DkOFLsG5xkW",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:0emH8ktA8x4DkOFLsG5xkW",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3pQEzg7xFqGIk0CK1Za1Kw",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:3pQEzg7xFqGIk0CK1Za1Kw",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4NAyd7rvnuG3DrPFqXo4eQ",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:4NAyd7rvnuG3DrPFqXo4eQ",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2MDHAUo4zJTHGXGQHUhNw0",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:2MDHAUo4zJTHGXGQHUhNw0",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4XP56LZjeS0TJUd30kpGSK",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:4XP56LZjeS0TJUd30kpGSK",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2daugr3ni3r6jHH6UI57EK",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:2daugr3ni3r6jHH6UI57EK",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6nhzq7P7x09aUbPts4ywFl",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:6nhzq7P7x09aUbPts4ywFl",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3w4RKguHAT2xd9K0w5CklC",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:3w4RKguHAT2xd9K0w5CklC",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4RFWRhPn8NX0DTQPpl1swe",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:4RFWRhPn8NX0DTQPpl1swe",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2tEdW6WKfcs2NGI6OIvAm6",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:2tEdW6WKfcs2NGI6OIvAm6",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:7FQvcCS2CdTVsd6hb9jvHx",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:7FQvcCS2CdTVsd6hb9jvHx",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2ZUYjQGsRLHRcsfgyeAWpo",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:2ZUYjQGsRLHRcsfgyeAWpo",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6NfxhZ4NebIduGEKZeD2Lk",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:6NfxhZ4NebIduGEKZeD2Lk",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2aTbpxiF2jNiB3PGi81oqa",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:2aTbpxiF2jNiB3PGi81oqa",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2dvfN5rFyQO69qmb5oYlRG",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:2dvfN5rFyQO69qmb5oYlRG",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6YQq5GsaUmanh0XyHQIGoR",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:6YQq5GsaUmanh0XyHQIGoR",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3KX10tZBft6gp2Nea9HZOB",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:3KX10tZBft6gp2Nea9HZOB",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:31MTBSMfWy4jGEYAilkaH8",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:31MTBSMfWy4jGEYAilkaH8",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3tKoMnnlkcRr7wE3PUQ9bp",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:3tKoMnnlkcRr7wE3PUQ9bp",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6jJpR9IhQ9PmRPJpxLlOmK",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:6jJpR9IhQ9PmRPJpxLlOmK",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:7xbS3rY8ZzCXNEPLPykf95",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:7xbS3rY8ZzCXNEPLPykf95",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4Z5UCQLqWzpPeihPTZ9Gqg",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:4Z5UCQLqWzpPeihPTZ9Gqg",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3r86CjoxCNvvCz98h2btm1",
+   "to": "artist:tbhh",
+   "rel": "performed_by",
+   "note": "kit.md credits rule"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "track:3r86CjoxCNvvCz98h2btm1",
+   "rel": "has_track",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "to": "person:hybrid",
+   "rel": "produced_by",
+   "note": "per CWI records; co-produced with Black"
+  },
+  {
+   "from": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "to": "person:black-lansky",
+   "rel": "co_produced_by",
+   "note": "per CWI records"
+  },
+  {
+   "from": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "to": "studio:cue-recording",
+   "rel": "recorded_at",
+   "note": "official position, owner-confirmed"
+  },
+  {
+   "from": "track:2MDHAUo4zJTHGXGQHUhNw0",
+   "to": "person:jeck-da-general",
+   "rel": "produced_by",
+   "note": "owner-confirmed"
+  },
+  {
+   "from": "track:0emH8ktA8x4DkOFLsG5xkW",
+   "to": "person:hybrid",
+   "rel": "mixed_and_mastered_by",
+   "note": "owner-confirmed; explicitly NOT a co-production credit"
+  },
+  {
+   "from": "track:0emH8ktA8x4DkOFLsG5xkW",
+   "to": "movement:ptf",
+   "rel": "exemplar_of",
+   "note": "flagship track per kit.md \u00a73"
+  },
+  {
+   "from": "track:3pQEzg7xFqGIk0CK1Za1Kw",
+   "to": "movement:ptf",
+   "rel": "exemplar_of",
+   "note": "flagship track per kit.md \u00a73"
+  },
+  {
+   "from": "track:4NAyd7rvnuG3DrPFqXo4eQ",
+   "to": "movement:ptf",
+   "rel": "exemplar_of",
+   "note": "flagship track per kit.md \u00a73"
+  },
+  {
+   "from": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "to": "release:diabolique-single",
+   "rel": "released_on",
+   "note": "kit.md \u00a73"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "release:alternative-theory",
+   "rel": "released",
+   "note": "kit.md / owner-confirmed"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "release:gta-vi-ep",
+   "rel": "released",
+   "note": "kit.md / owner-confirmed"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "release:no-skips",
+   "rel": "released",
+   "note": "kit.md / owner-confirmed"
+  },
+  {
+   "from": "artist:tbhh",
+   "to": "release:diabolique-single",
+   "rel": "released",
+   "note": "kit.md / owner-confirmed"
+  },
+  {
+   "from": "track:3pQEzg7xFqGIk0CK1Za1Kw",
+   "to": "playlist:new-rap-hits",
+   "rel": "placed_on",
+   "note": "verified #21, 2026-09-15"
+  },
+  {
+   "from": "track:0emH8ktA8x4DkOFLsG5xkW",
+   "to": "playlist:new-rap-hits",
+   "rel": "placed_on",
+   "note": "verified #30, 2026-09-15"
+  },
+  {
+   "from": "track:4NAyd7rvnuG3DrPFqXo4eQ",
+   "to": "playlist:new-rap-hits",
+   "rel": "placed_on",
+   "note": "verified #31, 2026-09-15"
+  },
+  {
+   "from": "track:0emH8ktA8x4DkOFLsG5xkW",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3pQEzg7xFqGIk0CK1Za1Kw",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4NAyd7rvnuG3DrPFqXo4eQ",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2eSyWmIdPzEMyWejLb2LBj",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2MDHAUo4zJTHGXGQHUhNw0",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4XP56LZjeS0TJUd30kpGSK",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2daugr3ni3r6jHH6UI57EK",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6nhzq7P7x09aUbPts4ywFl",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3w4RKguHAT2xd9K0w5CklC",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4RFWRhPn8NX0DTQPpl1swe",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2tEdW6WKfcs2NGI6OIvAm6",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:7FQvcCS2CdTVsd6hb9jvHx",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2ZUYjQGsRLHRcsfgyeAWpo",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6NfxhZ4NebIduGEKZeD2Lk",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2aTbpxiF2jNiB3PGi81oqa",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:2dvfN5rFyQO69qmb5oYlRG",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6YQq5GsaUmanh0XyHQIGoR",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3KX10tZBft6gp2Nea9HZOB",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:31MTBSMfWy4jGEYAilkaH8",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3tKoMnnlkcRr7wE3PUQ9bp",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:6jJpR9IhQ9PmRPJpxLlOmK",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:7xbS3rY8ZzCXNEPLPykf95",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:4Z5UCQLqWzpPeihPTZ9Gqg",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "track:3r86CjoxCNvvCz98h2btm1",
+   "to": "playlist:ai-learning-set",
+   "rel": "included_in",
+   "note": "AI Learning Set"
+  },
+  {
+   "from": "media:gtavi-artwork",
+   "to": "release:gta-vi-ep",
+   "rel": "artwork_for",
+   "note": "workspace file"
+  },
+  {
+   "from": "media:ig-reel-2026-09-15",
+   "to": "track:4NAyd7rvnuG3DrPFqXo4eQ",
+   "rel": "features_audio",
+   "note": "publish record"
+  },
+  {
+   "from": "media:ig-reel-2026-09-15",
+   "to": "media:gtavi-artwork",
+   "rel": "uses_artwork",
+   "note": "publish record"
+  }
+ ]
+}
