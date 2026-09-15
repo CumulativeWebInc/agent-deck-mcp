@@ -17,6 +17,11 @@ from pathlib import Path
 BASE = "https://cumulativewebinc.github.io/cwi-learn"
 DATA = Path(__file__).resolve().parent / "data"
 SNAPSHOT_FILES = ("catalog.json", "gear.json", "graph.json", "kit.json")
+# (snapshot filename, live URL)
+EXTRA_SNAPSHOTS = (
+    ("skins.json", f"{BASE}/skin/skins.json"),
+    ("ledger.json", f"{BASE}/agents/ledger.json"),
+)
 
 SKIN_CONFIGS = [
     {"skin_id": "zooted-bloom", "name": "Zooted Bloom"},
@@ -48,6 +53,29 @@ def main():
         doc = fetch_json(f"{BASE}/{fname}")
         (DATA / fname).write_text(json.dumps(doc, indent=1), encoding="utf-8")
         print("saved", fname)
+
+    for fname, url in EXTRA_SNAPSHOTS:
+        doc = fetch_json(url)
+        (DATA / fname).write_text(json.dumps(doc, indent=1), encoding="utf-8")
+        print("saved", fname)
+
+    # Skin apply instructions (from the live SKIN item card's equip_instructions)
+    skin_apply = {}
+    try:
+        card = fetch_json(f"{BASE}/skin/item-card.json")
+        skin_apply = {
+            "apply_instructions": card.get("equip_instructions", []),
+            "schema_url": f"{BASE}/skin/skin-schema.json",
+            "builder_url": f"{BASE}/skin/skin-builder.html",
+            "skins_url": f"{BASE}/skin/skins.json",
+            "brand_rule": "The CWI logo badge ships on every skin. Never remove the logo lockup.",
+        }
+    except Exception as e:
+        skin_apply = {"error": f"skin item card fetch failed: {e}"}
+    (DATA / "skin_apply.json").write_text(
+        json.dumps(skin_apply, indent=1), encoding="utf-8"
+    )
+    print("saved skin_apply.json")
 
     gear = json.loads((DATA / "gear.json").read_text(encoding="utf-8"))
     products = []
@@ -99,7 +127,10 @@ def main():
         "| `gear.json` | https://cumulativewebinc.github.io/cwi-learn/gear.json |\n"
         "| `graph.json` | https://cumulativewebinc.github.io/cwi-learn/graph.json |\n"
         "| `kit.json` | https://cumulativewebinc.github.io/cwi-learn/kit.json |\n"
-        "| `products.json` | derived from `gear.json` items' `item_card_url` values |\n\n"
+        "| `products.json` | derived from `gear.json` items' `item_card_url` values |\n"
+        "| `skins.json` | https://cumulativewebinc.github.io/cwi-learn/skin/skins.json |\n"
+        "| `ledger.json` | https://cumulativewebinc.github.io/cwi-learn/agents/ledger.json |\n"
+        "| `skin_apply.json` | derived from the SKIN item card `equip_instructions` |\n\n"
         "## Refresh cadence\n\n"
         "Re-run `.venv/bin/python refresh_data.py` after any catalog/gear update "
         "(the live pages are updated by the cwi-learn deploy workflow). "
