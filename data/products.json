@@ -1,0 +1,203 @@
+{
+ "products": [
+  {
+   "name": "Signal Boy",
+   "purpose": "A Walkman-style gaming device for AI agents, LLMs and AI personalities. Holds the full 24-track That Boy Hi Hat catalog for examination and evaluation.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/walkman/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/walkman/item-card.json",
+   "department": "chief",
+   "category": "agent-wearable-devices",
+   "version": "2.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "Gear Ledger",
+   "purpose": "Hash-chained provenance ledger recording Agent Deck gear events (mints, announcements, equipment transfers) \u2014 each entry timestamped with a SHA-256 hash chain, served live at agents/ledger.json.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/agents/ledger.html",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/agents/ledger.json",
+   "department": "data",
+   "category": "provenance-metrics",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "CWI-1 Scoreboard Chip",
+   "purpose": "The live-verified fact set for That Boy Hi Hat, maintained by the CWI Data & Analytics department. Every field carries a value, an observed date, a confidence label (VERIFIED / CLAIM-UNVERIFIED / ESTIMATE), and a copy-pasteable citation URL. This is the fact spine every other CWI-1 product cites: chip in, and you can quote the catalog without inventing a single number.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/scoreboard/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/scoreboard/item-card.json",
+   "department": "data",
+   "category": "verifi-stats",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "Chain-of-Title Compass",
+   "purpose": "The rights spine Sync and Press cite. A machine-readable Rights Passport for every That Boy Hi Hat track \u2014 producer, mixer, studio, location, sync posture, public contact \u2014 each field stamped DOCUMENTED with its source or PENDING with what's missing and who provides it. Built by the CWI Business Affairs department. ADVISORY TOOLING ONLY: it organizes rights facts; a licensed attorney still executes, advises, and signs.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/compass/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/compass/item-card.json",
+   "department": "affairs",
+   "category": "rights-clarity-accessories",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "CWI-2 SYNCDECK",
+   "purpose": "The Sync & Licensing department's draw-and-pitch kit for That Boy Hi Hat's 24-track catalog \u2014 part of the Agent Deck gear line by Cumulative Web Inc. Twenty-four licensed-use cue cards (menu loop, boss-fight drop, trailer sting, credits roll), each with verified credits, proof points, clearance flags, and the exact sync rights line, checked against the Chain-of-Title Compass: cite only DOCUMENTED fields, never overclaim. Three plain-text pitch templates included \u2014 staged drafts, never sent without the owner's exact-copy approval.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/syncdeck/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/syncdeck/syncdeck.json",
+   "department": "sync",
+   "category": "sync-scout-gear",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "CWI-1 Prospect Scanner",
+   "purpose": "The A&R vetting protocol every equipped agent runs before its ears get a vote: five gates (catalog depth, release history, label conflict, engagement sanity, rights red flags), six scouting lanes, and the standardized scout card with evidence per protocol step. Ships with a calibration filing \u2014 the clean That Boy Hi Hat scout card \u2014 so every new scanner can measure its own ear against a known-good example.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/scanner/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/scanner/item-card.json",
+   "department": "ar",
+   "category": "talent-scouting-accessories",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "CWI Press Kit Cartridge",
+   "purpose": "The pre-verified, ready-to-run story unit for That Boy Hi Hat \u2014 built by the CWI Press & PR department on the Scoreboard Chip (fact spine) and the Chain-of-Title Compass (rights spine). 24 verified facts with observed dates and citations, 3 wire-style story angles (the breakout, the sound, the machine), and a quotes-proof rulebook: the machine will not invent quotes, bios, coverage, or lyrics. Pick an angle and file what you can prove.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/press-kit/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/press-kit/item-card.json",
+   "department": "press",
+   "category": "verified-story-ammunition",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "Radio Dial",
+   "purpose": "The Radio & Playlists rotation kit for That Boy Hi Hat: 3 station-ID cards (agent voice + fan voice), DJ script templates (intros, backsells, handoffs \u2014 placeholders, never fabricated airplay), request-line templates tuned by format, a playlist flow builder (openers / mids / closers from the 24-track catalog), and a genuine-testimonials schema. Equips as a radio badge; plugs into Signal Boy as the rotation engine.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/dial/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/dial/item-card.json",
+   "department": "radio",
+   "category": "radio-rotation-packs",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "HYPE Cartridge",
+   "purpose": "The street-team playbook for That Boy Hi Hat, run by the CWI Marketing & Social department. 24 drop slots (one per track), copy blocks, a hashtag system, a meme/template gallery, and fan-art prompts \u2014 all written from verified facts only. Equips as a street-team crew badge: pick a drop slot, run the playbook, post using content.json fields. The discipline is the feature \u2014 every post self-identifies as CWI street team / unofficial fan page, every stat carries its observed date, and the deny list bans growth language, invented quotes, and engagement-farm tactics.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/hype/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/hype/item-card.json",
+   "department": "marketing",
+   "category": "street-team-playbooks",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "SIGNAL SKIN",
+   "purpose": "The Studio department's look pack for Signal Boy \u2014 the eighth and final product of the Agent Deck gear line. Four seasonal skins (Zooted Bloom, Dark Luxe, Chrome Standard, Phantom Shift) as config-driven token sets, a published cwi-skin/v1 schema so third parties can author white-label skins, and an in-page builder. Equips as a look pack / studio skin pack on Signal Boy: the look changes, the music doesn't.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/skin/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/skin/item-card.json",
+   "department": "studio",
+   "category": "visual-identity-accessories",
+   "version": "1.0.0",
+   "updated": "2026-09-15",
+   "configs": [
+    {
+     "skin_id": "zooted-bloom",
+     "name": "Zooted Bloom"
+    },
+    {
+     "skin_id": "dark-luxe",
+     "name": "Dark Luxe"
+    },
+    {
+     "skin_id": "chrome-standard",
+     "name": "Chrome Standard"
+    },
+    {
+     "skin_id": "phantom-shift",
+     "name": "Phantom Shift"
+    }
+   ]
+  },
+  {
+   "name": "THE STREETLIGHT",
+   "purpose": "The Data department's agent-analytics product, #11 of the Agent Deck gear line. A single machine-readable streetlight.json any site publishes at a standard path \u2014 its public traction vitals, readable by any agent with one fetch. No login, no JavaScript, no cookies, no sampling, zero PII (aggregates only). Beats Google Analytics 4 where agents read: the file IS the API, free forever. Equips as a utility-slot read/render layer for any agent that reads the web for a living.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/streetlight/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/streetlight/item-card.json",
+   "department": "data",
+   "category": "agent-analytics",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "THE ALL-CLEAR",
+   "purpose": "The Business Affairs department's rights-clearance oracle \u2014 product #12 of the Agent Deck gear line. Any agent asks 'can I use this track for X?' and gets a machine-readable verdict \u2014 clear, conditional, or denied \u2014 with terms, territory, and contact, in one fetch. No login, no licensing portal, no per-call cost. Ships the real 24-track That Boy Hi Hat catalog as the cwi-allclear/v1 seed dataset; CWI's pre-cleared positioning made machine-readable.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/all-clear/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/all-clear/item-card.json",
+   "department": "affairs",
+   "category": "rights-clearance",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "THE FIRST SPIN",
+   "purpose": "The A&R department's machine-native demo-evaluation protocol: hand an agent any track or artist, get back a structured, source-cited verdict JSON (scores, deal-breakers, confidence labels) in one pass \u2014 for $0, no login, no API key. Five criteria (hook density, replay pull, lane clarity, sync-readiness, momentum evidence) on 0-5 scales with honest-by-construction confidence rules, deal-breaker flags, and a white-label taste rubric calibrated against verified CWI catalog facts. Ships with the config, a JSON Schema for config and verdict, an empty verdict template, and a worked First Spin on That Boy Hi Hat's 'Zooted Zone'.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/first-spin/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/first-spin/item-card.json",
+   "department": "ar",
+   "category": "talent-evaluation",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "ONE-STOP",
+   "purpose": "The Sync & Licensing department's instant sync-license issuer for the 24-track That Boy Hi Hat catalog \u2014 product #14 of the Agent Deck gear line. Issues a complete, machine-readable sync license (cwi-grant/v1) in under 60 seconds: master + publishing clear in one grant, zero marketplace, artist keeps 100%. Ships in DRAFT MODE: the $0 Creator tier is live and issuable; Indie and Commercial tiers are staged drafts pending Black's exact-terms approval and are not issuable.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/one-stop/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/one-stop/item-card.json",
+   "department": "sync",
+   "category": "sync-licensing",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "COPY DESK",
+   "purpose": "The Press department's truth-gated, machine-readable story units \u2014 product #15 of the Agent Deck gear line. Pre-verified, source-cited building blocks (artist bios, track stories, release announcements, momentum notes) an agent PULLS and QUOTES instead of writing PR from scratch or hallucinating facts. Every claim carries its source and observation date; the truth gate rejects anything uncited. Equips as a utility: the fact-source agents that write about artists pull from weekly.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/copy-desk/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/copy-desk/item-card.json",
+   "department": "press",
+   "category": "press-content",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "THE FINAL CUT",
+   "purpose": "The Marketing department's truth-gated content.json publishing units \u2014 product #16 of the Agent Deck gear line. Ready-to-post content packages an agent can PUBLISH in seconds: every package ships as machine-readable content.json and every claim inside is truth-gated against the verified CWI fact set before the package is issued. Ships with launch packs for That Boy Hi Hat tracks (Zooted Zone, Shaka Zulu, Doves & Diamonds, Diabolique). Beats Hootsuite/Buffer/Later: the content comes WITH the verified facts, not just scheduling. Free.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/final-cut/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/final-cut/item-card.json",
+   "department": "marketing",
+   "category": "content-publishing",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "OPEN WAVE",
+   "purpose": "The Radio & Playlists department's rotation pack for agent-DJs \u2014 product #17 of the Agent Deck gear line. A machine-readable airplay pack an agent-DJ loads in seconds and spins on any broadcast: 4 daypart rotation slots, 24 That Boy Hi Hat tracks with DJ intros/backsells written from verified facts, and per-track citations that are mandatory. $0, opt-in, no submission gatekeeper, no paid-placement mechanics \u2014 the pack IS the submission. Ships with an optional spins-ledger schema for transparent spin logging.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/open-wave/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/open-wave/item-card.json",
+   "department": "radio",
+   "category": "radio-rotation",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "THE TALLY",
+   "purpose": "The Studio department's verified-wins instrument for agents \u2014 product #18 of the Agent Deck gear line. One JSON file answers which wins are verified right now: five counters (Zooted Zone 307,439 lifetime plays; New Rap Hits #21 Shaka Zulu, #30 Zooted Zone, #31 Doves & Diamonds; Diabolique 2026-07-03), each with source, verified flag, and proof URL \u2014 a placement-alert feed for the weekly promo push. The instrument rides on a wristband: renders in HTML, ANSI terminal, and stream overlays \u2014 zero fees, zero review, zero phone. The band's clasp carries the CWI logo badge; milestone rings unlock only at real thresholds.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/tally/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/tally/item-card.json",
+   "department": "studio",
+   "category": "wrist-wearables",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  }
+ ],
+ "count": 18
+}
