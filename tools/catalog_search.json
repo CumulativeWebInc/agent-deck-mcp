@@ -1,0 +1,30 @@
+{
+  "name": "cwi_catalog_search",
+  "description": "Search the verified That Boy Hi Hat 24-track catalog (Cumulative Web Inc machine-data layer). Reads catalog.json and datasets/tracks.jsonl \u2014 both verified live 2026-09-15. Use for: find a track by title, check explicit flags (Spotify metadata), get verified Spotify URLs, see producer notes. Truth-only: stream counts beyond the owner's stated ~307k lifetime for 'Zooted Zone' are not asserted.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "Track title (or fragment) to search, e.g. 'Zooted Zone', 'Diabolique'."
+      },
+      "include_metadata": {
+        "type": "boolean",
+        "default": true,
+        "description": "Include explicit flags, producer notes, platform links where present."
+      }
+    },
+    "required": [
+      "query"
+    ]
+  },
+  "annotations": {
+    "endpoints": [
+      "https://cumulativewebinc.github.io/cwi-learn/catalog.json",
+      "https://cumulativewebinc.github.io/cwi-learn/datasets/tracks.jsonl",
+      "https://cumulativewebinc.github.io/cwi-learn/mixtape/machine-mixtape.json"
+    ],
+    "readOnlyHint": true,
+    "openWorldHint": true
+  }
+}

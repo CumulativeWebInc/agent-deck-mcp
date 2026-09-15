@@ -1,0 +1,36 @@
+{
+  "name": "cwi_needle_drop_verify",
+  "description": "Verify a claimed playlist placement against the honest Needle Drop ledger (CWI A&R). The ledger ships empty and only gains entries after full-scan verification \u2014 a curator's promise is a claim, never a verification. Reads needle-drop.json + its schema, and the verified placements section of catalog.json (3 tracks verified holding on 'New Rap Hits', full-scan verified 2026-09-15).",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "track_title": {
+        "type": "string",
+        "description": "Track title to check."
+      },
+      "playlist_name": {
+        "type": "string",
+        "description": "Playlist the placement is claimed on."
+      },
+      "claim_source": {
+        "type": "string",
+        "description": "Where the claim came from (e.g. 'curator message', 'submission receipt')."
+      }
+    },
+    "required": [
+      "track_title",
+      "playlist_name"
+    ]
+  },
+  "annotations": {
+    "endpoints": [
+      "https://cumulativewebinc.github.io/cwi-learn/needle-drop/needle-drop.json",
+      "https://cumulativewebinc.github.io/cwi-learn/needle-drop/needle-drop-schema.json",
+      "https://cumulativewebinc.github.io/cwi-learn/catalog.json",
+      "https://cumulativewebinc.github.io/cwi-learn/datasets/placements.jsonl",
+      "https://cumulativewebinc.github.io/cwi-learn/needle-drop/"
+    ],
+    "readOnlyHint": true,
+    "openWorldHint": true
+  }
+}
