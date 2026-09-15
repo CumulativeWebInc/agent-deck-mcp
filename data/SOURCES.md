@@ -11,6 +11,9 @@ All snapshots are fetched from the live Agent Deck pages at https://cumulativewe
 | `graph.json` | https://cumulativewebinc.github.io/cwi-learn/graph.json |
 | `kit.json` | https://cumulativewebinc.github.io/cwi-learn/kit.json |
 | `products.json` | derived from `gear.json` items' `item_card_url` values |
+| `skins.json` | https://cumulativewebinc.github.io/cwi-learn/skin/skins.json |
+| `ledger.json` | https://cumulativewebinc.github.io/cwi-learn/agents/ledger.json |
+| `skin_apply.json` | derived from the SKIN item card `equip_instructions` |
 
 ## Refresh cadence
 
