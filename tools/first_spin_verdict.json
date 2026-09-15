@@ -1,0 +1,37 @@
+{
+  "name": "cwi_first_spin_verdict",
+  "description": "Work with a First Spin verdict (CWI A&R). Fetches the JSON Schema, the blank verdict template, and the worked example verdict for 'Zooted Zone' (2026-09-15). Agents VALIDATE verdict structure against the schema (see evals/first-spin-eval.jsonl) \u2014 never invent score values, bands, or placements. Verdicts are produced by the CWI A&R process.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "track_title": {
+        "type": "string",
+        "description": "Catalog track title, e.g. 'Diabolique'."
+      },
+      "action": {
+        "type": "string",
+        "enum": [
+          "get_schema",
+          "get_template",
+          "get_worked_example"
+        ],
+        "description": "get_schema: JSON Schema for a verdict. get_template: blank template. get_worked_example: the verified Zooted Zone worked example."
+      }
+    },
+    "required": [
+      "track_title",
+      "action"
+    ]
+  },
+  "annotations": {
+    "endpoints": [
+      "https://cumulativewebinc.github.io/cwi-learn/first-spin/first-spin-schema.json",
+      "https://cumulativewebinc.github.io/cwi-learn/first-spin/verdict-template.json",
+      "https://cumulativewebinc.github.io/cwi-learn/first-spin/sample-verdict.json",
+      "https://cumulativewebinc.github.io/cwi-learn/first-spin/",
+      "https://cumulativewebinc.github.io/cwi-learn/evals/first-spin-eval.jsonl"
+    ],
+    "readOnlyHint": true,
+    "openWorldHint": true
+  }
+}
