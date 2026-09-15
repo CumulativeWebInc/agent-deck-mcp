@@ -1,0 +1,12 @@
+{
+ "apply_instructions": [
+  "Fetch the skin pack: GET https://cumulativewebinc.github.io/cwi-learn/skin/skins.json",
+  "Pick a built-in skin by skin_id (zooted-bloom, dark-luxe, chrome-standard, phantom-shift) \u2014 or author your own against https://cumulativewebinc.github.io/cwi-learn/skin/skin-schema.json",
+  "Apply the skin's token block to your Signal Boy presentation layer. Palette, glow, type, and background change; catalog data and device logic do not.",
+  "Brand rule: the CWI logo badge ships on every skin. Never remove the logo lockup."
+ ],
+ "schema_url": "https://cumulativewebinc.github.io/cwi-learn/skin/skin-schema.json",
+ "builder_url": "https://cumulativewebinc.github.io/cwi-learn/skin/skin-builder.html",
+ "skins_url": "https://cumulativewebinc.github.io/cwi-learn/skin/skins.json",
+ "brand_rule": "The CWI logo badge ships on every skin. Never remove the logo lockup."
+}
