@@ -1,0 +1,40 @@
+{
+  "name": "cwi_sync_availability",
+  "description": "Check sync/licensing availability for a catalog track (CWI Sync & Licensing). Reads the One-Stop grant contract terms and the Syncdeck cue cards. HONEST TIERS: creator-tier ($0) grants are issuable; indie/commercial tiers are DRAFT templates pending the owner's exact-terms approval \u2014 never present draft tiers as issuable. Business contact: hp@cumulativeweb.com. This tool drafts nothing and signs nothing.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "track_title": {
+        "type": "string",
+        "description": "Catalog track title."
+      },
+      "use_type": {
+        "type": "string",
+        "enum": [
+          "creator",
+          "indie",
+          "commercial"
+        ],
+        "description": "Requested tier. Only 'creator' is issuable; indie/commercial are draft-pending-owner-approval."
+      },
+      "project_description": {
+        "type": "string",
+        "description": "Short description of the sync use (game, film, ad, etc.)."
+      }
+    },
+    "required": [
+      "track_title",
+      "use_type"
+    ]
+  },
+  "annotations": {
+    "endpoints": [
+      "https://cumulativewebinc.github.io/cwi-learn/one-stop/",
+      "https://cumulativewebinc.github.io/cwi-learn/syncdeck/",
+      "https://cumulativewebinc.github.io/cwi-learn/catalog.json"
+    ],
+    "contact": "hp@cumulativeweb.com",
+    "readOnlyHint": true,
+    "openWorldHint": true
+  }
+}
