@@ -1,0 +1,187 @@
+{
+ "count": 4,
+ "department": "studio",
+ "description": "Four seasonal launch skins for Signal Boy. Every skin is a config-driven token set \u2014 palette, background treatment, D-pad glow, track-accent treatment, typography accents \u2014 plus a logo lockup. Signal Boy reskins itself from these tokens; nothing in the device's logic changes.",
+ "format": "cwi-skin/v1",
+ "hub_device": "https://cumulativewebinc.github.io/cwi-learn/walkman/",
+ "product": "SIGNAL SKIN",
+ "schema": "https://cumulativewebinc.github.io/cwi-learn/skin/skin-schema.json",
+ "skins": [
+  {
+   "background_treatment": {
+    "angle": 135,
+    "from": "#231b3a",
+    "style": "gradient",
+    "to": "#0b1f10"
+   },
+   "dpad_glow": {
+    "color": "#a3ff5e",
+    "intensity": "strong",
+    "pulse": true
+   },
+   "inspired_by": "Zooted Zone (That Boy Hi Hat \u2014 the breakout, 307K plays observed 2026-09-14)",
+   "logo_lockup": {
+    "position": "header",
+    "treatment": "circular-badge"
+   },
+   "palette": {
+    "accent": "#a3ff5e",
+    "accent_bright": "#d8ffb3",
+    "body": "#231b3a",
+    "body_dark": "#160f26",
+    "logo_ring": "#a3ff5e",
+    "screen": "#0b1f10",
+    "screen_text": "#c6ffb0",
+    "subtext": "#a89ccf",
+    "text": "#f2ecff"
+   },
+   "season": "spring-2026",
+   "skin_id": "zooted-bloom",
+   "skin_name": "Zooted Bloom",
+   "skin_version": "1.0.0",
+   "track_accent_treatment": {
+    "animation": "scroll",
+    "color": "#a3ff5e",
+    "style": "neon-bar"
+   },
+   "typography_accents": {
+    "display_font": "'Trebuchet MS', 'Segoe UI', sans-serif",
+    "font_style": "wide",
+    "label_case": "upper",
+    "letter_spacing": "2px"
+   }
+  },
+  {
+   "background_treatment": {
+    "angle": 0,
+    "from": "#1a1a20",
+    "style": "radial",
+    "to": "#050507"
+   },
+   "dpad_glow": {
+    "color": "#d4a017",
+    "intensity": "soft",
+    "pulse": false
+   },
+   "inspired_by": "Diabolique (single 2026-07-03, That Boy Hi Hat)",
+   "logo_lockup": {
+    "position": "header",
+    "treatment": "circular-badge"
+   },
+   "palette": {
+    "accent": "#d4a017",
+    "accent_bright": "#f5c445",
+    "body": "#101014",
+    "body_dark": "#08080a",
+    "logo_ring": "#d4a017",
+    "screen": "#0a0a0c",
+    "screen_text": "#f5c445",
+    "subtext": "#9b958a",
+    "text": "#ece8df"
+   },
+   "season": "winter-2026",
+   "skin_id": "dark-luxe",
+   "skin_name": "Dark Luxe",
+   "skin_version": "1.0.0",
+   "track_accent_treatment": {
+    "animation": "pulse",
+    "color": "#d4a017",
+    "style": "led-dots"
+   },
+   "typography_accents": {
+    "display_font": "Georgia, 'Times New Roman', serif",
+    "font_style": "uppercase",
+    "label_case": "title",
+    "letter_spacing": "1px"
+   }
+  },
+  {
+   "background_treatment": {
+    "angle": 135,
+    "from": "#3a3f47",
+    "style": "gradient",
+    "to": "#0a1830"
+   },
+   "dpad_glow": {
+    "color": "#9fb4d8",
+    "intensity": "medium",
+    "pulse": false
+   },
+   "inspired_by": "The Agent Deck default \u2014 the shelf-standard look every white-label starts from",
+   "logo_lockup": {
+    "position": "header",
+    "treatment": "circular-badge"
+   },
+   "palette": {
+    "accent": "#274a7d",
+    "accent_bright": "#9fb4d8",
+    "body": "#3a3f47",
+    "body_dark": "#24282e",
+    "logo_ring": "#d4a017",
+    "screen": "#0a1830",
+    "screen_text": "#cfe0f5",
+    "subtext": "#9aa5b8",
+    "text": "#eef2f8"
+   },
+   "season": "evergreen",
+   "skin_id": "chrome-standard",
+   "skin_name": "Chrome Standard",
+   "skin_version": "1.0.0",
+   "track_accent_treatment": {
+    "animation": "none",
+    "color": "#274a7d",
+    "style": "tape-stripe"
+   },
+   "typography_accents": {
+    "display_font": "-apple-system, 'Segoe UI', Roboto, sans-serif",
+    "font_style": "condensed",
+    "label_case": "upper",
+    "letter_spacing": "0.5px"
+   }
+  },
+  {
+   "background_treatment": {
+    "angle": 160,
+    "from": "#12061f",
+    "style": "gradient",
+    "to": "#04302a"
+   },
+   "dpad_glow": {
+    "color": "#c77dff",
+    "intensity": "medium",
+    "pulse": true
+   },
+   "inspired_by": "Shaka Zulu (New Rap Hits #21, That Boy Hi Hat)",
+   "logo_lockup": {
+    "position": "header",
+    "treatment": "circular-badge"
+   },
+   "palette": {
+    "accent": "#c77dff",
+    "accent_bright": "#00e5cc",
+    "body": "#12061f",
+    "body_dark": "#0a0412",
+    "logo_ring": "#c77dff",
+    "screen": "#0b0512",
+    "screen_text": "#e0aaff",
+    "subtext": "#a98fc7",
+    "text": "#f5edff"
+   },
+   "season": "autumn-2026",
+   "skin_id": "phantom-shift",
+   "skin_name": "Phantom Shift",
+   "skin_version": "1.0.0",
+   "track_accent_treatment": {
+    "animation": "pulse",
+    "color": "#00e5cc",
+    "style": "neon-bar"
+   },
+   "typography_accents": {
+    "display_font": "'Courier New', monospace",
+    "font_style": "uppercase",
+    "label_case": "upper",
+    "letter_spacing": "3px"
+   }
+  }
+ ]
+}
