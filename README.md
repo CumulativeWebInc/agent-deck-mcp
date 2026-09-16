@@ -1,7 +1,7 @@
 # Agent Deck MCP Server — v1.0.0
 
 The CWI agent departments' shared reasoning layer: a **read-only** MCP server
-(stdio transport) exposing the live **Agent Deck** product registry (18 SKUs)
+(stdio transport) exposing the live **Agent Deck** product registry (25 SKUs)
 and the verified **That Boy Hi Hat** 24-track catalog to any MCP-capable
 agent — Claude, Cursor, VS Code Copilot, or another agent on the network.
 
@@ -140,7 +140,7 @@ scores 0 — never estimated.
 }
 ```
 
-Empty `query` lists all 18 SKUs (paginated via `limit`/`offset`).
+Empty `query` lists all 25 SKUs (paginated via `limit`/`offset`).
 
 ### Example 4 — `skin_config`: get a SKIN config (equip Zooted Bloom)
 
