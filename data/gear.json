@@ -165,7 +165,9 @@
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/streetlight/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/streetlight/",
    "updated": "2026-09-15",
-   "equipped_by": []
+   "equipped_by": [
+    "cwi_data"
+   ]
   },
   {
    "name": "THE ALL-CLEAR",
@@ -179,7 +181,9 @@
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/all-clear/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/all-clear/",
    "updated": "2026-09-15",
-   "equipped_by": []
+   "equipped_by": [
+    "cwi_affairs"
+   ]
   },
   {
    "name": "THE FIRST SPIN",
@@ -193,7 +197,9 @@
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/first-spin/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/first-spin/",
    "updated": "2026-09-15",
-   "equipped_by": []
+   "equipped_by": [
+    "cwi_aandr"
+   ]
   },
   {
    "name": "ONE-STOP",
@@ -207,7 +213,9 @@
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/one-stop/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/one-stop/",
    "updated": "2026-09-15",
-   "equipped_by": []
+   "equipped_by": [
+    "cwi_sync"
+   ]
   },
   {
    "name": "COPY DESK",
@@ -221,7 +229,9 @@
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/copy-desk/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/copy-desk/",
    "updated": "2026-09-15",
-   "equipped_by": []
+   "equipped_by": [
+    "cwi_press"
+   ]
   },
   {
    "name": "THE FINAL CUT",
@@ -235,7 +245,9 @@
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/final-cut/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/final-cut/",
    "updated": "2026-09-15",
-   "equipped_by": []
+   "equipped_by": [
+    "cwi_marketing"
+   ]
   },
   {
    "name": "OPEN WAVE",
@@ -249,7 +261,9 @@
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/open-wave/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/open-wave/",
    "updated": "2026-09-15",
-   "equipped_by": []
+   "equipped_by": [
+    "cwi_radio"
+   ]
   },
   {
    "name": "THE TALLY",
@@ -262,6 +276,106 @@
    "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/tally/give-block.md",
    "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/tally/rubric.json",
    "product_url": "https://cumulativewebinc.github.io/cwi-learn/tally/",
+   "updated": "2026-09-15",
+   "equipped_by": [
+    "cwi_studio"
+   ]
+  },
+  {
+   "name": "THE SIGNET",
+   "gear": "signet",
+   "department": "affairs",
+   "category": "rights-assertion",
+   "slot": "business-affairs",
+   "version": "1.0.0",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/signet/item-card.json",
+   "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/signet/give-block.md",
+   "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/signet/rubric.json",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/signet/",
+   "updated": "2026-09-15",
+   "equipped_by": []
+  },
+  {
+   "name": "EAR WITNESS",
+   "gear": "ear-witness",
+   "department": "a&r",
+   "category": "talent-evaluation",
+   "slot": "personality",
+   "version": "1.0.0",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/ear-witness/item-card.json",
+   "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/ear-witness/give-block.md",
+   "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/ear-witness/rubric.json",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/ear-witness/",
+   "updated": "2026-09-15",
+   "equipped_by": []
+  },
+  {
+   "name": "NEEDLE DROP",
+   "gear": "needle-drop",
+   "department": "sync",
+   "category": "sync-licensing",
+   "slot": "utility",
+   "version": "1.0.0",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/needle-drop/item-card.json",
+   "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/needle-drop/give-block.md",
+   "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/needle-drop/rubric.json",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/needle-drop/",
+   "updated": "2026-09-15",
+   "equipped_by": []
+  },
+  {
+   "name": "GREENROOM",
+   "gear": "greenroom",
+   "department": "press",
+   "category": "press-content",
+   "slot": "utility",
+   "version": "1.0.0",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/greenroom/item-card.json",
+   "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/greenroom/give-block.md",
+   "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/greenroom/rubric.json",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/greenroom/",
+   "updated": "2026-09-15",
+   "equipped_by": []
+  },
+  {
+   "name": "THE BULLHORN",
+   "gear": "bullhorn",
+   "department": "marketing",
+   "category": "content-publishing",
+   "slot": "utility",
+   "version": "1.0.0",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/bullhorn/item-card.json",
+   "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/bullhorn/give-block.md",
+   "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/bullhorn/rubric.json",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/bullhorn/",
+   "updated": "2026-09-15",
+   "equipped_by": []
+  },
+  {
+   "name": "SOUNDCHECK",
+   "gear": "soundcheck",
+   "department": "radio",
+   "category": "radio-rotation",
+   "slot": "radio-playlists",
+   "version": "1.0.0",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/soundcheck/item-card.json",
+   "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/soundcheck/give-block.md",
+   "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/soundcheck/rubric.json",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/soundcheck/",
+   "updated": "2026-09-15",
+   "equipped_by": []
+  },
+  {
+   "name": "SIGNAL MIRROR",
+   "gear": "signal-mirror",
+   "department": "studio",
+   "category": "persona-instruments",
+   "slot": "personality",
+   "version": "1.0.0",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/signal-mirror/item-card.json",
+   "give_block_url": "https://cumulativewebinc.github.io/cwi-learn/signal-mirror/give-block.md",
+   "rubric_url": "https://cumulativewebinc.github.io/cwi-learn/signal-mirror/rubric.json",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/signal-mirror/",
    "updated": "2026-09-15",
    "equipped_by": []
   }
