@@ -114,7 +114,7 @@ async def main():
             for p in pl["page"]["items"]:
                 assert p["purpose"] and len(p["purpose"]) > 20, p
                 assert p["product_url"].startswith("https://"), p
-            print("product_lookup ok: all 18 SKUs, purpose + live URL each")
+            print("product_lookup ok: all 25 SKUs, purpose + live URL each")
 
             # pagination
             pg1 = await as_json("product_lookup", {"limit": 5, "offset": 0})
