@@ -1,7 +1,7 @@
 """Agent Deck MCP Server v1.0.0 — the CWI agent departments' shared reasoning layer.
 
 Read-only MCP server (stdio transport) exposing the live Agent Deck product
-registry (18 SKUs) and the verified That Boy Hi Hat 24-track catalog to any
+registry (25 SKUs) and the verified That Boy Hi Hat 24-track catalog to any
 MCP-capable agent — Claude, Cursor, VS Code Copilot, or another agent.
 
 Evidence tiers on every answer: verified | owner_confirmed |
@@ -313,7 +313,7 @@ def _slim_product(p):
 def product_lookup(query: str = "", limit: int = 18, offset: int = 0) -> dict:
     """List Agent Deck products: name, one-line purpose, live URL, department.
 
-    Empty query lists all 18 SKUs (paginated); text filters on name/purpose,
+    Empty query lists all 25 SKUs (paginated); text filters on name/purpose,
     e.g. {"query": "sync"} or {"query": "The First Spin"}.
     SIGNAL SKIN entries include its 4 config names; full configs live in
     the skin_config tool.
