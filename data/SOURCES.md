@@ -1,6 +1,6 @@
 # Data sources
 
-Snapshot date: 2026-09-15
+Snapshot date: 2026-09-16
 
 All snapshots are fetched from the live Agent Deck pages at https://cumulativewebinc.github.io/cwi-learn/ :
 
