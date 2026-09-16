@@ -101,7 +101,7 @@ async def main():
 
             # ---- product_lookup ----
             pl = await as_json("product_lookup", {})
-            assert pl["sku_count"] == 18 and pl["page"]["total"] == 18, pl
+            assert pl["sku_count"] == 25 and pl["page"]["total"] == 25, pl
             got = {p["name"] for p in pl["page"]["items"]}
             want = {"Signal Boy", "Gear Ledger", "CWI-1 Scoreboard Chip",
                     "Chain-of-Title Compass", "CWI-2 SYNCDECK",
