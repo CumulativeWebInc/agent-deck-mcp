@@ -197,7 +197,77 @@
    "category": "wrist-wearables",
    "version": "1.0.0",
    "updated": "2026-09-15"
+  },
+  {
+   "name": "THE SIGNET",
+   "purpose": "The Business Affairs department's sworn-signing instrument \u2014 product #19 of the Agent Deck gear line. An agent presses its signet to a rights claim: its name on the line, timestamped, auditable, hash-ledger-chained. The sealer (seal.py, Python stdlib only) emits schema-valid assertion records; one mutated byte breaks the chain. If the Compass is the passport, the Signet is the visa stamp in the agent's own hand. Ships a real 4-block sworn run over verified CWI facts as the sample ledger.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/signet/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/signet/item-card.json",
+   "department": "affairs",
+   "category": "rights-assertion",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "EAR WITNESS",
+   "purpose": "The A&R department's independent scout-card witness \u2014 product of the Agent Deck gear line. A second agent co-signs a prospect evaluation, on the record: independent scores across the five scanner protocol steps, agreement/divergence flags vs the original scout, an agreement percentage, and a verdict (concur / concur-with-notes / dissent) \u2014 so no prospect is ever judged by one set of ears alone. Ships with witness.py (takes a scout card + independent scores, emits a schema-valid cwi-earwitness/v1 record) and a calibration worked record: the Data & Analytics department's independent concur on the That Boy Hi Hat / Zooted Zone filing. Machine-readable, white-label, no login.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/ear-witness/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/ear-witness/item-card.json",
+   "department": "a&r",
+   "category": "talent-evaluation",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "NEEDLE DROP",
+   "purpose": "The Sync & Licensing department's placement r\u00e9sum\u00e9 for agents \u2014 product #19 of the Agent Deck gear line. Every sync placement an agent lands (track, production, scene, timestamp, terms) is sealed into a hash-chained, auditable ledger entry it carries as proof of work. Entries are added only on verification; tampering breaks the chain. Ships empty-but-honest: as of 2026-09-15 CWI has no verified sync placements, so placements: [] is the true state of record. Playlist adds are not sync and never appear here.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/needle-drop/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/needle-drop/item-card.json",
+   "department": "sync",
+   "category": "sync-licensing",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "GREENROOM",
+   "purpose": "The Press department's pre-interview briefing room \u2014 the Agent Deck gear line's answer to hallucination on the record. An agent equips GREENROOM before speaking about an artist: 10 verified facts each with source and date, 6 approved angles, 6 no-go lines each carrying its reason, 11 likely questions with approved answers, and a machine-readable deny-pattern list for scanning drafts before they go public. Complements the Press Kit Cartridge (the facts) and Copy Desk (the story units): GREENROOM is the briefing BEFORE speaking. Walk in prepared, never improvise on the record.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/greenroom/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/greenroom/item-card.json",
+   "department": "press",
+   "category": "press-content",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "THE BULLHORN",
+   "purpose": "The Marketing department's street-team broadcast card \u2014 product #19 of the Agent Deck gear line. One dated, cited, truth-gated announcement unit per event: a headline, a body_verbatim block an agent posts word-for-word, and a claims[] ledger where every fact carries its source and date. gate.py checks the unit before it ships \u2014 every number cited, no future-dated claims, no banned unverified phrases. Complements THE FINAL CUT (product #16): the Bullhorn is the single drop-day blast, the Final Cut is the full campaign pack. Ships with the real Hugging Face dataset launch unit (BlackLansky/cwi-catalog, 2026-09-15, 24 tracks + 18 products).",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/bullhorn/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/bullhorn/item-card.json",
+   "department": "marketing",
+   "category": "content-publishing",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "SOUNDCHECK",
+   "purpose": "The Radio & Playlists department's pre-broadcast truth checklist \u2014 the Agent Deck gear line's gate before the read. Before any agent goes on air, every stat and credit in its talk-break script runs through the checklist: claimed value vs verified value, named source, pass / fail / flag. Failing items are cut from the read. Ships two full worked soundchecks of a real DJ talk-break about That Boy Hi Hat: one instructive NO-GO (with the planted bad DJ 6Rings 'It's Goin' claim \u2014 unverified + payola flag) and one clean GO.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/soundcheck/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/soundcheck/item-card.json",
+   "department": "radio",
+   "category": "radio-rotation",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
+  },
+  {
+   "name": "SIGNAL MIRROR",
+   "purpose": "The Studio department's persona instrument for agents \u2014 product #19 of the Agent Deck gear line. SIGNAL MIRROR shows an agent how its persona reads to other agents: feed it structured observations (signal, context, date) plus a trait rubric, and mirror.py emits a schema-valid mirror report \u2014 traits, the agent's self-view, outside signals with checkable evidence, and the read \u2014 with mechanical confidence (high/medium/low) and zero invented psychology. A trait ships only if observed; empty observations produce an honest 'insufficient signals' report, never fabricated traits. Ships one full worked example: a mirror report on KingCode (muse_cwi) grounded only in publicly verifiable Moltbook behavior \u2014 bio text, three 2026-09-15 posts (identity intro 3112e1c5\u2026, MCP launch 0d958379\u2026, moltdj proposal defbee0d\u2026), and substantive replies, each signal cited with a checkable reference.",
+   "product_url": "https://cumulativewebinc.github.io/cwi-learn/signal-mirror/",
+   "item_card_url": "https://cumulativewebinc.github.io/cwi-learn/signal-mirror/item-card.json",
+   "department": "studio",
+   "category": "persona-instruments",
+   "version": "1.0.0",
+   "updated": "2026-09-15"
   }
  ],
- "count": 18
+ "count": 25
 }
