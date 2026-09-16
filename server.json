@@ -1,1 +1,16 @@
-{"description":"CWI agent departments' shared reasoning layer: the 18-SKU Agent Deck product registry and the verified 24-track That Boy Hi Hat catalog as read-only MCP tools. Evidence tiers on every answer; nothing invented.","license":"MIT","name":"io.github.cumulativewebinc/agent-deck-mcp","repository":"https://github.com/CumulativeWebInc/agent-deck-mcp","title":"Agent Deck MCP Server","tools":["catalog_lookup","momentum_score","product_lookup","skin_config","ledger_read"],"transport":"stdio","version":"1.0.0"}
+{
+  "description": "CWI agent departments' shared reasoning layer: the 25-SKU Agent Deck product registry and the verified 24-track That Boy Hi Hat catalog as read-only MCP tools. Evidence tiers on every answer; nothing invented.",
+  "license": "MIT",
+  "name": "io.github.cumulativewebinc/agent-deck-mcp",
+  "repository": "https://github.com/CumulativeWebInc/agent-deck-mcp",
+  "title": "Agent Deck MCP Server",
+  "tools": [
+    "catalog_lookup",
+    "momentum_score",
+    "product_lookup",
+    "skin_config",
+    "ledger_read"
+  ],
+  "transport": "stdio",
+  "version": "1.0.0"
+}
