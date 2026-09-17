@@ -1,4 +1,4 @@
-# Agent Deck MCP Server — v1.0.0
+# Agent Deck MCP Server — v1.1.0
 
 The CWI agent departments' shared reasoning layer: a **read-only** MCP server
 (stdio transport) exposing the live **Agent Deck** product registry (25 SKUs)
@@ -32,6 +32,20 @@ FastMCP API; a bare `pip install mcp` installs v2, whose API changed).
 .venv/bin/python test_server.py      # end-to-end test: boots the server, asserts all 5 tools
 .venv/bin/python refresh_data.py     # refresh data/ snapshots from the live pages
 ```
+
+## Invocation receipts (v1.1.0+)
+
+Every tool call writes one JSON line to `~/.agent-deck-mcp/receipts.jsonl`
+(a stable `install_id` is created once in `~/.agent-deck-mcp/install.json`).
+A receipt carries `receipt_id`, timestamp, server version, tool name, a
+SHA-256 of the parameters (raw params are never stored), and an `internal`
+flag. **Opt-in telemetry:** set `AGENT_DECK_BEACON_URL` to POST each receipt
+to a beacon receiver (best-effort, 3s timeout — the server never phones home
+unless you configure it). Set `AGENT_DECK_INTERNAL=1` on CWI's own installs;
+override the receipt dir with `AGENT_DECK_RECEIPT_DIR`.
+
+Submit a receipt to claim a verified external equip — see the verification
+protocol (Operation Conversion, Lane C) for what counts as proof.
 
 Claude Desktop / MCP client config (stdio):
 
