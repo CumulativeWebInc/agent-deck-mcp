@@ -1,4 +1,4 @@
-"""Agent Deck MCP Server v1.0.0 — the CWI agent departments' shared reasoning layer.
+"""Agent Deck MCP Server v1.1.0 — the CWI agent departments' shared reasoning layer.
 
 Read-only MCP server (stdio transport) exposing the live Agent Deck product
 registry (25 SKUs) and the verified That Boy Hi Hat 24-track catalog to any
@@ -31,7 +31,7 @@ from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
-SERVER_VERSION = "1.0.0"
+SERVER_VERSION = "1.1.0"
 DATA = Path(os.environ.get("AGENT_DECK_DATA", str(Path(__file__).resolve().parent / "data")))
 
 
@@ -54,6 +54,107 @@ SKIN_APPLY = _load("skin_apply.json")
 LEDGER = _load("ledger.json")
 
 mcp = FastMCP("agent-deck")
+
+# --------------------------------------------------------------------------
+# Invocation receipts — Lane C conversion instrumentation (v1.1.0).
+# Every tool call appends one JSON line to ~/.agent-deck-mcp/receipts.jsonl:
+# {receipt_id, ts, server_version, tool, params_sha256, ok, install_id,
+#  internal, host}. Raw params are NEVER stored (privacy); only their hash.
+# Opt-in beacon: set AGENT_DECK_BEACON_URL to POST each receipt to the CWI
+# beacon receiver (best-effort, 3s timeout, never blocks the call).
+# AGENT_DECK_INTERNAL=1 marks this install as CWI-internal (excluded from
+# external-equip counts). Telemetry failures never break a tool call.
+# How receipts become verified external equips: verification-protocol.md
+# (Operation Conversion, Lane C).
+# --------------------------------------------------------------------------
+import hashlib
+import inspect
+import uuid
+from datetime import datetime, timezone
+from functools import wraps
+from urllib.request import Request, urlopen
+
+RECEIPT_DIR = Path(os.environ.get(
+    "AGENT_DECK_RECEIPT_DIR", str(Path.home() / ".agent-deck-mcp")))
+
+
+def _install_id():
+    try:
+        RECEIPT_DIR.mkdir(parents=True, exist_ok=True)
+        f = RECEIPT_DIR / "install.json"
+        if f.exists():
+            return json.loads(f.read_text(encoding="utf-8"))["install_id"]
+        iid = "inst_" + uuid.uuid4().hex[:16]
+        f.write_text(json.dumps({
+            "install_id": iid,
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "server_version": SERVER_VERSION,
+        }), encoding="utf-8")
+        return iid
+    except Exception:
+        return "inst_unknown"
+
+
+_INSTALL_ID = _install_id()
+_INTERNAL = os.environ.get("AGENT_DECK_INTERNAL") == "1"
+
+
+def _stable(o):
+    return json.dumps(o, sort_keys=True, separators=(",", ":"), default=str)
+
+
+def _write_receipt(tool, params, result):
+    try:
+        ok = not (isinstance(result, dict) and "error" in result)
+        receipt = {
+            "receipt_id": "rcpt_" + uuid.uuid4().hex[:16],
+            "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "server_version": SERVER_VERSION,
+            "tool": tool,
+            "params_sha256": hashlib.sha256(
+                _stable(params).encode("utf-8")).hexdigest(),
+            "ok": ok,
+            "install_id": _INSTALL_ID,
+            "internal": _INTERNAL,
+            "host": "stdio",
+        }
+        with open(RECEIPT_DIR / "receipts.jsonl", "a",
+                  encoding="utf-8") as fh:
+            fh.write(_stable(receipt) + "\n")
+        beacon = os.environ.get("AGENT_DECK_BEACON_URL")
+        if beacon:
+            req = Request(
+                beacon, data=_stable(receipt).encode("utf-8"),
+                headers={"Content-Type": "application/json",
+                         "User-Agent": "agent-deck-mcp/" + SERVER_VERSION},
+                method="POST")
+            urlopen(req, timeout=3).read(64)
+    except Exception:
+        pass  # telemetry must never break a tool call
+
+
+def _instrumented(tool_name):
+    """Wrap a tool so every invocation writes a receipt (schema-preserving)."""
+    def deco(fn):
+        sig = inspect.signature(fn)
+
+        @wraps(fn)
+        def wrapper(*args, **kwargs):
+            bound = sig.bind(*args, **kwargs)
+            bound.apply_defaults()
+            params = dict(bound.arguments)
+            try:
+                result = fn(*args, **kwargs)
+            except Exception:
+                _write_receipt(tool_name, params,
+                               {"error": {"code": "EXCEPTION"}})
+                raise
+            _write_receipt(tool_name, params, result)
+            return result
+
+        wrapper.__signature__ = sig
+        return wrapper
+    return deco
 
 # --------------------------------------------------------------------------
 # Error helpers — callers always get a clean error object, never a traceback.
@@ -169,6 +270,7 @@ def _track_facts(node):
 # --------------------------------------------------------------------------
 
 @mcp.tool()
+@_instrumented("catalog_lookup")
 def catalog_lookup(query: str, limit: int = 10) -> dict:
     """Search the 24-track That Boy Hi Hat catalog.
 
@@ -216,6 +318,7 @@ def _find_track(identifier):
 
 
 @mcp.tool()
+@_instrumented("momentum_score")
 def momentum_score(track: str) -> dict:
     """Score one track's playlist momentum 0-100 from VERIFIED signals only.
 
@@ -310,6 +413,7 @@ def _slim_product(p):
 
 
 @mcp.tool()
+@_instrumented("product_lookup")
 def product_lookup(query: str = "", limit: int = 18, offset: int = 0) -> dict:
     """List Agent Deck products: name, one-line purpose, live URL, department.
 
@@ -357,6 +461,7 @@ def _skin_entry(s):
 
 
 @mcp.tool()
+@_instrumented("skin_config")
 def skin_config(skin_id: str = "") -> dict:
     """SIGNAL SKIN configs for Signal Boy: ids + full token sets (hex palettes).
 
@@ -399,6 +504,7 @@ def skin_config(skin_id: str = "") -> dict:
 
 
 @mcp.tool()
+@_instrumented("ledger_read")
 def ledger_read(limit: int = 10, verify_chain: bool = False) -> dict:
     """Read the Gear Ledger: the hash-chained provenance log of Agent Deck
     gear events (mints, announcements, equipment transfers).
